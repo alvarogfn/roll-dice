@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roll Dices</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1> Hello World! </h1>
+    <div class="container">
+        <h1 class="aba">Personagem</h1>
+        <main class="conteudo">
+            <article class="habilidades">
+                <h2 class="habilidades__title">ATRIBUTOS</h2>
+                <section class="habilidades__info attributes">
+                    <section class="attributes__skill">
+                        <img class="attributes__img" src="img/blades.png" alt="">
+                        <input class="attributes__input" type="number" min="-99" max="99" placeholder="0" required>
+                    </section>
+                    
+                    <section class="attributes__skill">
+                        <img class="attributes__img" src="img/escudo.png" alt="">
+                        <input class="attributes__input" type="number" min="-99" max="99" placeholder="0" required>
+                    </section>
+        
+                    
+                    <section class="attributes__skill">
+                        <img class="attributes__img" src="img/rapidez.png" alt="">
+                        <input class="attributes__input" type="number" min="-99" max="99" placeholder="0" required>
+                    </section>
+        
+                    
+                    <section class="attributes__skill">
+                        <img class="attributes__img" src="img/super-inteligencia.png" alt="">
+                        <input class="attributes__input" type="number" min="-99" max="99" placeholder="0" required>
+                    </section>
+        
+                    
+                    <section class="attributes__skill">
+                        <img class="attributes__img" src="img/sabedoria.png" alt="">
+                        <input class="attributes__input" type="number" min="-99" max="99" placeholder="0" required>
+                    </section>
+        
+                    
+                    <section class="attributes__skill">
+                        <img class="attributes__img" src="img/violao.png" alt="">
+                        <input class="attributes__input" type="number" min="-99" max="99" placeholder="0" required>
+                    </section>
+                </section>
+            </article>
+            <article class="person">
+                <section class="person__container">
+                    <input class="person__name" type="text" placeholder="Pastel Knight">
+                    <img class="person__picture" src="img/knight.png" alt="foto-perfil">
+                </section>
+                <section class="specs">
+                    <img class="specs__img" src="img/violao.png" alt="atributo principal">
+                    <section class="dano">
+                        <h2>Dano TOTAL</h2>
+                        <p class="dano__value">600</p>
+                        <section class="dano__modificador">
+                            <p><span>+5</span>FORÇA</p>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </main>
+    </div>
 </body>
 </html>
