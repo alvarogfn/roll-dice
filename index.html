@@ -8,10 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="aba">Personagem</h1>
+        <header class="cabecalho">
+            <nav class="cabecalho__nav">
+                <ul class="cabecalho__list">
+                    <li class="cabecalho__item">
+                        <a class="cabecalho__link" href="">Dados</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <main class="conteudo">
             <article class="habilidades">
-                <h2 class="habilidades__title">ATRIBUTOS</h2>
+                <h1 class="habilidades__title">ATRIBUTOS</h1>
                 <section class="habilidades__info attributes">
                     <section class="attributes__skill">
                         <img class="attributes__img" src="img/blades.png" alt="">
@@ -55,8 +63,8 @@
                 </section>
                 <section class="specs">
                     <img class="specs__img" src="img/violao.png" alt="atributo principal">
-                    <section class="dano">
-                        <h2>Dano TOTAL</h2>
+                    <section class="specs__dano dano">
+                        <h1 class="dano__title">Dano TOTAL</h1>
                         <p class="dano__value">600</p>
                         <section class="dano__modificador">
                             <p><span>+5</span>FORÇA</p>
@@ -65,7 +73,7 @@
                 </section>
             </article>
             <article class="equip">
-                <h2>Equipamentos</h2>
+                <h1 class="equip__title">Equipamentos</h1>
                 <section class="equip__inventory">
                     <div class="equip__item">
                         <p class="equip__item-descricao">
@@ -91,8 +99,55 @@
                     <button class="add-or-remove__button">-</button>
                 </section>
             </article>
+            <article class="fixos">
+                <h1 class="fixos__title">Fixos</h1>
+                <section class="fixos__table">
+                    <div class="fixos__item">
+                        <p><span>+5</span> FORÇA <span class="fixos__attr">Físico</span></p>
+                    </div>
+                    <div class="fixos__item">
+                        <p><span>+5</span> EQUIPAMENTO <span class="fixos__attr">Mágico</span></p>
+                    </div>
+                </section>
+                
+                <section class="gold-rule">
+                    <p class="gold-rule__title">Gold Rule</p>
+                    <input class="gold-rule__input" type="number" placeholder="0">
+                </section>
+            </article>
+            <article class="roll-dados">
+                <section class="roll-dados__dice">
+                    <img class="roll-dados__img" src="img/dice.png" alt="dado">
+                    <select class="roll-dados__number">
+                        <option value="100">D100</option>
+                        <option value="20">D20</option>
+                        <option value="12">D12</option>
+                        <option value="10">D10</option>
+                        <option value="8">D8</option>
+                        <option value="6">D6</option>
+                        <option value="4">D4</option>
+                    </select>
+                </section>
+                <section class="roll-dados__type">
+                    <p>TIPO:</p>
+                    <select>
+                        <option value="F">Fisico</option>
+                        <option value="F">Magico</option>
+                        <option value="F">Psiquico</option>
+                        <option value="F">Frio</option>
+                        <option value="F">Quente</option>
+                        <option value="F">Molhado</option>
+                    </select>
+                </section>
+                <section class="roll-dados__add">
+                    <button class="roll-dados__button">+</button>
+                    <div class="roll-dados__qtd">
+                        <input class="roll-dados__qtd-number" type="number">X
+                    </div>
+                </section>
+            </article>
             <article class="dados">
-                <h2>Dados</h2>
+                <h1 class="dados__title">Dados</h1>
                 <section class="dados__result">
                     <div class="dados__result-item">
                         <p>15
@@ -121,47 +176,8 @@
                     <div class="dados__result-total">506</div>
                 </section>
             </article>
-            <article class="roll-dados">
-                <section class="roll-dados__dice">
-                    <img class="roll-dados__img" src="img/dice.png" alt="dado">
-                    <input class="roll-dados__number" type="number">
-                </section>
-                <section class="roll-dados__type">
-                    <p class="roll-dados__title">TIPO:</p>
-                    <select>
-                        <option value="F">Fisico</option>
-                        <option value="F">Magico</option>
-                        <option value="F">Psiquico</option>
-                        <option value="F">Frio</option>
-                        <option value="F">Quente</option>
-                        <option value="F">Molhado</option>
-                    </select>
-                </section>
-                <section class="roll-dados__add">
-                    <button class="roll-dados__button">+</button>
-                    <div class="roll-dados__qtd">
-                        <input class="roll-dados__qtd-number" type="number">X
-                    </div>
-                </section>
-            </article>
-            <article class="fixos">
-                <h2>Fixos</h2>
-                <section class="fixos__table">
-                    <div class="fixos__item">
-                        <p>+5 FORÇA <span class="fixos__attr">Físico</span></p>
-                    </div>
-                    <div class="fixos__item">
-                        <p>+5 EQUIPAMENTO <span class="fixos__attr">Mágico</span></p>
-                    </div>
-                </section>
-                
-                <section class="gold-rule">
-                    <p class="gold-rule__title">Gold <br> Rule</p>
-                    <input class="gold-rule__input" type="number" placeholder="0">
-                </section>
-            </article>
             <article class="rolling">
-                <h2>Rodar</h2>
+                <h1>Rodar</h1>
                 <button class="rolling__button">
                     <img class="rolling__img" src="img/dices.png" alt="rodar">
                 </button>
