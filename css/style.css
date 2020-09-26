@@ -353,28 +353,28 @@ body {
   font-family: "Gamer";
   font-size: 16px;
   font-weight: 400;
-  src: url("./../fonts/Gamer.eot") format("eot"), url("./../fonts/Gamer.otf") format("otf"), url("./../fonts/Gamer.svg") format("svg"), url("./../fonts/Gamer.ttf") format("ttf"), url("./../fonts/Gamer.woff") format("woff"), url("./../fonts/Gamer.woff2") format("woff2");
+  src: url("./fonts/Gamer.eot") format("eot"), url("./fonts/Gamer.otf") format("otf"), url("./fonts/Gamer.svg") format("svg"), url("./fonts/Gamer.ttf") format("ttf"), url("./fonts/Gamer.woff") format("woff"), url("./fonts/Gamer.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Sadana Square";
   font-size: 16px;
   font-weight: 400;
-  src: url("./../fonts/SadanaSquare.eot") format("eot"), url("./../fonts/SadanaSquare.otf") format("otf"), url("./../fonts/SadanaSquare.svg") format("svg"), url("./../fonts/SadanaSquare.ttf") format("ttf"), url("./../fonts/SadanaSquare.woff") format("woff"), url("./../fonts/SadanaSquare.woff2") format("woff2");
+  src: url("./fonts/SadanaSquare.eot") format("eot"), url("./fonts/SadanaSquare.otf") format("otf"), url("./fonts/SadanaSquare.svg") format("svg"), url("./fonts/SadanaSquare.ttf") format("ttf"), url("./fonts/SadanaSquare.woff") format("woff"), url("./fonts/SadanaSquare.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "BMSTA";
   font-size: 16px;
   font-weight: 400;
-  src: url("./../fonts/BMSTA.eot") format("eot"), url("./../fonts/BMSTA.otf") format("otf"), url("./../fonts/BMSTA.svg") format("svg"), url("./../fonts/BMSTA.ttf") format("ttf"), url("./../fonts/BMSTA.woff") format("woff"), url("./../fonts/BMSTA.woff2") format("woff2");
+  src: url("./fonts/BMSTA.eot") format("eot"), url("./fonts/BMSTA.otf") format("otf"), url("./fonts/BMSTA.svg") format("svg"), url("./fonts/BMSTA.ttf") format("ttf"), url("./fonts/BMSTA.woff") format("woff"), url("./fonts/BMSTA.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "PixelU";
   font-size: 16px;
   font-weight: 400;
-  src: url("./../fonts/I-pixel-u.eot") format("eot"), url("./../fonts/I-pixel-u.otf") format("otf"), url("./../fonts/I-pixel-u.svg") format("svg"), url("./../fonts/I-pixel-u.ttf") format("ttf"), url("./../fonts/I-pixel-u.woff") format("woff"), url("./../fonts/I-pixel-u.woff2") format("woff2");
+  src: url("./fonts/I-pixel-u.eot") format("eot"), url("./fonts/I-pixel-u.otf") format("otf"), url("./fonts/I-pixel-u.svg") format("svg"), url("./fonts/I-pixel-u.ttf") format("ttf"), url("./fonts/I-pixel-u.woff") format("woff"), url("./fonts/I-pixel-u.woff2") format("woff2");
 }
 
 img {
