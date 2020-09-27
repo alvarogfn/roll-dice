@@ -55,21 +55,18 @@
                         <input class="attributes__input" type="number" min="-99" max="99" placeholder="0" required>
                     </section>
                 </section>
+                <section class="habilidades__mod">
+                    <p><span>+5</span> FORÇA</p>
+                </section>
             </article>
             <article class="person">
                 <section class="person__container">
                     <input class="person__name" type="text" placeholder="Pastel Knight">
                     <img class="person__picture" src="img/knight.png" alt="foto-perfil">
                 </section>
-                <section class="specs">
-                    <img class="specs__img" src="img/violao.png" alt="atributo principal">
-                    <section class="specs__dano dano">
-                        <h1 class="dano__title">Dano TOTAL</h1>
-                        <p class="dano__value">600</p>
-                        <section class="dano__modificador">
-                            <p><span>+5</span>FORÇA</p>
-                        </section>
-                    </section>
+                <section class="person__danototal">
+                    <h1 class="person__title">Dano total</h1>
+                    <p class="person__number">0000000</p>
                 </section>
             </article>
             <article class="equip">
@@ -150,34 +147,35 @@
                 <h1 class="dados__title">Dados</h1>
                 <section class="dados__result">
                     <div class="dados__result-item">
-                        <p>15
-                            <span>D20</span>
+                        <p class="dados__result-item--text">15
+                            <span class="dados__type-dado">D20</span>
                         </p>
-                        <p class="dados__type">Físico</p>
+                        
+                        <p class="dados__type"><span>5</span>Físico</p>
                     </div>
                     <div class="dados__result-item">
-                        <p>15
-                            <span>D12</span>
+                        <p class="dados__result-item--text">15
+                            <span class="dados__type-dado">D12</span>
                         </p>
-                        <p class="dados__type">Físico</p>
+                        <p class="dados__type"><span>5</span>Físico</p>
                     </div>
                     <div class="dados__result-item">
-                        <p>15
-                            <span>D10</span>
+                        <p class="dados__result-item--text">15
+                            <span class="dados__type-dado">D10</span>
                         </p>
-                        <p class="dados__type">Físico</p>
+                        <p class="dados__type"><span>5</span>Físico</p>
                     </div>
                     <div class="dados__result-item">
-                        <p>15
-                            <span>D8</span>
+                        <p class="dados__result-item--text">15
+                            <span class="dados__type-dado">D8</span>
                         </p>
-                        <p class="dados__type">Físico</p>
+                        <p class="dados__type"><span>5</span>Físico</p>
                     </div>
-                    <div class="dados__result-total">506</div>
                 </section>
+                <div class="dados__result-total">506</div>
             </article>
             <article class="rolling">
-                <h1>Rodar</h1>
+                <h1 class="rolling__title">Rodar</h1>
                 <button class="rolling__button">
                     <img class="rolling__img" src="img/dices.png" alt="rodar">
                 </button>
