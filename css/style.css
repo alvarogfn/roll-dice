@@ -441,6 +441,13 @@ span {
   font-family: 'BMSTA';
 }
 
+@media screen and (min-width: 600px) {
+  img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
 .cabecalho {
   display: none;
 }
@@ -453,26 +460,6 @@ span {
 .conteudo {
   display: flex;
   flex-direction: column;
-}
-
-.habilidades {
-  border: 0.5rem solid black;
-  background-color: #FF3A00;
-  margin-top: 1%;
-}
-
-.habilidades__attributes {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: .5rem;
-}
-
-.habilidades__mod {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto .25rem;
-  border: 0.25rem solid black;
 }
 
 .person {
@@ -497,9 +484,29 @@ span {
   background-color: #FF3A00;
 }
 
+.habilidades {
+  border: 0.5rem solid black;
+  background-color: #FF3A00;
+  margin-top: 1%;
+}
+
+.habilidades__attributes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: .5rem;
+}
+
+.habilidades__mod {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto .25rem;
+  border: 0.25rem solid black;
+}
+
 .equip {
   position: relative;
-  margin-top: 1%;
+  margin-top: 1rem;
   border: 0.5rem solid black;
   background-color: #FF3A00;
 }
@@ -601,6 +608,66 @@ span {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .conteudo {
+    flex-flow: row wrap;
+    align-items: flex-end;
+  }
+  .person {
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  .person__container {
+    flex-grow: 2;
+  }
+  .person__danototal {
+    flex-basis: 30%;
+    flex-grow: 1;
+    height: max-content;
+  }
+  .habilidades {
+    margin: 1rem auto;
+    flex-basis: 80%;
+    padding: 1.5rem;
+  }
+  .habilidades__mod {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+  }
+  .equip {
+    flex-basis: 50%;
+  }
+  .fixos {
+    flex-basis: 40%;
+    margin-left: .5rem;
+    margin-top: 1rem;
+    align-self: flex-start;
+  }
+  .roll-dados {
+    margin: 4rem auto 2rem;
+  }
+  .roll-dados__dice {
+    flex-basis: 30%;
+    justify-content: space-around;
+  }
+  .roll-dados__type {
+    flex-basis: 20%;
+    border-right: 0.5rem solid rgba(0, 0, 0, 0);
+  }
+  .roll-dados__add {
+    flex-basis: 30%;
+    background-color: #FF3A00;
+    border: .5rem solid black;
+  }
+  .dados {
+    flex-basis: 100%;
+  }
 }
 
 .person__name {
@@ -773,4 +840,29 @@ span {
 
 .rolling__img {
   padding: .5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .roll-dados__button {
+    order: 2;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+  }
+  .roll-dados__qtd {
+    order: 1;
+    color: black;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .roll-dados__qtd-number {
+    order: 2;
+    text-align: left;
+  }
+  .habilidades .attributes__skill {
+    padding: .5rem;
+    margin: .5rem;
+  }
+  .habilidades .attributes__input {
+    font-size: 1.75rem;
+  }
 }
