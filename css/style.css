@@ -386,7 +386,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
 }
 
 nav, ul, li {
@@ -404,10 +405,27 @@ input {
   border: none;
   font-family: 'Sadana Square';
   letter-spacing: .25rem;
+  color: white;
 }
 
 input::placeholder {
+  color: black;
+}
+
+button {
+  font-family: 'BMSTA';
+}
+
+select {
+  background-color: black;
   color: white;
+  text-transform: uppercase;
+  font-family: 'Sadana Square';
+  border: 0.1rem solid black;
+}
+
+option {
+  text-transform: uppercase;
 }
 
 img {
@@ -417,6 +435,10 @@ img {
 
 p {
   font-family: 'PixelU';
+}
+
+span {
+  font-family: 'BMSTA';
 }
 
 .cabecalho {
@@ -436,7 +458,7 @@ p {
 .habilidades {
   border: 0.5rem solid black;
   background-color: #FF3A00;
-  margin-top: 2rem;
+  margin-top: 1%;
 }
 
 .habilidades__attributes {
@@ -444,6 +466,13 @@ p {
   flex-flow: row wrap;
   justify-content: center;
   padding: .5rem;
+}
+
+.habilidades__mod {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto .25rem;
+  border: 0.25rem solid black;
 }
 
 .person {
@@ -468,9 +497,87 @@ p {
   background-color: #FF3A00;
 }
 
+.equip {
+  position: relative;
+  margin-top: 1%;
+  border: 0.5rem solid black;
+  background-color: #FF3A00;
+}
+
+.add-or-remove {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  right: 0;
+}
+
+.fixos {
+  text-align: center;
+  margin-top: 2rem;
+  border: 0.5rem solid black;
+  background-color: #FF3A00;
+}
+
+.fixos__table {
+  display: flex;
+  flex-flow: column;
+}
+
+.gold-rule {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FF9F00;
+  border-top: .25rem solid black;
+  padding: .5rem .5rem;
+}
+
+.roll-dados {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+.roll-dados__dice {
+  flex-basis: 40%;
+  flex-grow: 1;
+  border: 0.5rem solid black;
+  background-color: #FF3A00;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem .5rem;
+}
+
+.roll-dados__type {
+  flex-grow: 1;
+  flex-basis: content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: black;
+  border: 0.25rem solid #FF3A00;
+  border-left: .25rem solid black;
+  padding: .5rem 0 .5rem .5rem;
+  box-sizing: border-box;
+}
+
+.roll-dados__add {
+  flex-basis: 60%;
+  background-color: black;
+  border: 0.25rem solid #FF3A00;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+}
+
 .person__name {
   width: 100%;
   padding: .5rem;
+  font-size: 1.5rem;
 }
 
 .person__title {
@@ -489,8 +596,6 @@ p {
 
 .habilidades__title {
   text-align: center;
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
 }
 
 .habilidades .attributes__skill {
@@ -508,4 +613,77 @@ p {
   font-family: 'BMSTA';
   text-align: center;
   width: 100%;
+}
+
+.equip__title {
+  text-align: center;
+}
+
+.equip__inventory {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: .5rem;
+}
+
+.equip__item {
+  padding: .7rem;
+  border: 0.1rem solid black;
+  margin: .25rem;
+}
+
+.add-or-remove__button {
+  border: 0.25rem solid black;
+  background-color: #FF3A00;
+  padding: .25rem;
+  width: 25%;
+  margin-right: 1rem;
+}
+
+.fixos__item {
+  padding: .5rem 0;
+  margin: .25rem .25rem;
+  border: 0.1rem solid black;
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: space-around;
+}
+
+.fixos__attr {
+  font-family: 'Sadana Square';
+}
+
+.gold-rule__input {
+  width: 50%;
+  font-size: 1.5rem;
+  text-align: right;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+.roll-dados__number {
+  padding: .5rem .5rem;
+  font-size: 1.5rem;
+}
+
+.roll-dados__button {
+  font-size: 2rem;
+  color: #FF3A00;
+  background-color: black;
+  border: none;
+}
+
+.roll-dados__qtd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #FF3A00;
+  font-family: 'PixelU';
+  font-size: 2rem;
+}
+
+.roll-dados__qtd-number {
+  width: 50%;
+  text-align: right;
+  margin-right: 1rem;
+  letter-spacing: 1rem;
 }
