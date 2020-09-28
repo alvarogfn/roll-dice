@@ -410,6 +410,7 @@ input {
 
 input::placeholder {
   color: black;
+  opacity: .5;
 }
 
 button {
@@ -499,9 +500,13 @@ span {
 
 .habilidades__mod {
   text-align: center;
-  width: 50%;
+  width: max-content;
+  padding: .25rem;
   margin: 0 auto .25rem;
-  border: 0.25rem solid black;
+  border: 0.1rem solid #140126;
+  background-color: #300759;
+  box-shadow: .1rem .1rem .1rem black;
+  color: #C291F2;
 }
 
 .equip {
@@ -599,8 +604,10 @@ span {
   flex-grow: 1;
   border: 0.1rem solid #090709;
   margin: .25rem;
+  background-color: #300759;
   display: flex;
   flex-direction: column;
+  box-shadow: 0.1rem 0.1rem 0.2rem #140126;
 }
 
 .rolling {
@@ -658,12 +665,13 @@ span {
   }
   .roll-dados__type {
     flex-basis: 20%;
-    border-right: 0.5rem solid rgba(0, 0, 0, 0);
   }
   .roll-dados__add {
     flex-basis: 30%;
-    background-color: #FF3A00;
-    border: .5rem solid black;
+    align-self: center;
+    background-color: #140126;
+    border: 0.5rem solid #4C0D8C;
+    border-left: none;
   }
   .dados {
     flex-basis: 100%;
@@ -697,7 +705,7 @@ span {
   }
   .person__danototal:hover {
     top: 0;
-    border-top: 0.5rem solid rgba(0, 0, 0, 0);
+    border-top: none;
   }
   .habilidades {
     flex-basis: 90%;
@@ -732,6 +740,11 @@ span {
   .fixos__table {
     flex-flow: row wrap;
   }
+  .gold-rule {
+    border: 0.25rem solid black;
+    margin-top: 1rem;
+    width: 15%;
+  }
   .roll-dados {
     position: fixed;
     margin: 0;
@@ -751,8 +764,21 @@ span {
   .roll-dados:hover .roll-dados__add {
     flex-basis: 40%;
   }
-  .roll-dados__dice, .roll-dados__type, .roll-dados__add {
+  .roll-dados__dice {
+    border-right: none;
     border-bottom: none;
+  }
+  .roll-dados__type {
+    border-width: .5rem;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  .roll-dados__add {
+    border-bottom: none;
+    align-self: stretch;
+  }
+  .roll-dados__dice, .roll-dados__type, .roll-dados__add {
     flex-basis: 15%;
     transition: 400ms flex-basis;
   }
@@ -807,7 +833,8 @@ span {
   align-items: center;
   margin: .25rem;
   padding: .25rem;
-  border: 0.1rem solid black;
+  box-shadow: .1rem .1rem .1rem black;
+  background-color: #4C0D8C;
 }
 
 .habilidades .attributes__input {
@@ -830,22 +857,29 @@ span {
 
 .equip__item {
   padding: .7rem;
-  border: 0.1rem solid black;
+  border: 0.1rem solid #140126;
+  background-color: #300759;
+  color: #C291F2;
+  box-shadow: 0.1rem 0.1rem 0.1rem #090709;
   margin: .25rem;
 }
 
 .add-or-remove__button {
-  border: 0.25rem solid black;
-  background-color: #FF3A00;
+  background-color: #300759;
+  border: 0.1rem solid #140126;
   padding: .25rem;
   width: 25%;
   margin-right: 1rem;
+  color: white;
 }
 
 .fixos__item {
   padding: .5rem 0;
   margin: .25rem .25rem;
   border: 0.1rem solid black;
+  background-color: #300759;
+  color: #C291F2;
+  box-shadow: .1rem .1rem .1rem black;
   display: flex;
   flex-flow: row, nowrap;
   justify-content: space-around;
@@ -869,8 +903,8 @@ span {
 
 .roll-dados__button {
   font-size: 2rem;
-  color: #FF3A00;
-  background-color: black;
+  color: #4C0D8C;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
 }
 
@@ -878,7 +912,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: #FF3A00;
+  color: #4C0D8C;
   font-family: 'PixelU';
   font-size: 2rem;
 }
@@ -901,7 +935,7 @@ span {
   font-family: 'Sadana Square';
   padding: .5rem;
   color: white;
-  background-color: black;
+  background-color: #140126;
   margin-bottom: .52rem;
 }
 
@@ -909,7 +943,7 @@ span {
   font-family: 'Sadana Square';
   font-size: 1.5rem;
   letter-spacing: .25rem;
-  color: #FF3A00;
+  color: #4C0D8C;
 }
 
 .dados__result--type {
@@ -918,11 +952,13 @@ span {
   padding: .25rem .5rem;
   display: flex;
   justify-content: space-between;
+  color: #C291F2;
 }
 
 .dados__result-total {
-  background-color: black;
-  color: white;
+  background-color: #140126;
+  border: 0.15rem solid #300759;
+  color: #C291F2;
   font-family: 'Sadana Square';
   font-size: 2rem;
   margin: .25rem;
@@ -931,17 +967,17 @@ span {
 }
 
 .rolling__title {
-  background-color: black;
+  background-color: #C291F2;
   height: max-content;
   padding: .25rem;
-  border: 0.25rem solid #FF3A00;
+  border: 0.25rem solid #140126;
   border-right: 0.25rem solid rgba(0, 0, 0, 0);
   opacity: .5;
 }
 
 .rolling__button {
-  background-color: black;
-  border: 0.25rem solid #FF3A00;
+  background-color: #4C0D8C;
+  border: 0.25rem solid #140126;
 }
 
 .rolling__img {
@@ -949,27 +985,29 @@ span {
 }
 
 @media screen and (min-width: 600px) {
-  .roll-dados__button {
-    order: 2;
-    background-color: rgba(0, 0, 0, 0);
-    color: black;
-  }
-  .roll-dados__qtd {
-    order: 1;
-    color: black;
-    width: 100%;
-    justify-content: space-around;
-  }
-  .roll-dados__qtd-number {
-    order: 2;
-    text-align: left;
-  }
   .habilidades .attributes__skill {
     padding: .5rem;
     margin: .5rem;
   }
   .habilidades .attributes__input {
     font-size: 1.75rem;
+  }
+  .roll-dados__button {
+    order: 2;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+  }
+  .roll-dados__qtd {
+    order: 1;
+    color: white;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .roll-dados__qtd-number {
+    order: 2;
+    text-align: left;
+    margin-top: .25rem;
+    color: #C291F2;
   }
 }
 
@@ -993,12 +1031,13 @@ span {
     max-width: 15rem;
   }
   .add-or-remove__button {
-    background-color: black;
-    color: #FF3A00;
+    background-color: #220440;
+    color: white;
     font-size: 1.5rem;
+    border: 0.1rem solid #C291F2;
     border-top: none;
     padding: .5rem;
-    width: 8rem;
+    width: 6rem;
   }
   .fixos__item {
     flex-basis: 23%;
@@ -1029,4 +1068,9 @@ span {
     width: 75px;
     height: 75px;
   }
+}
+
+.roll-dados__add {
+  position: relative;
+  left: -1px;
 }
